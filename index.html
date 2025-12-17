@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Vault</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div id="loginBox" class="card">
+    <h1>Secure Media Vault</h1>
+    <p class="subtitle">Masukkan password untuk masuk</p>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Masuk</button>
+  </div>
+
+  <!-- APP -->
+  <div id="app" class="card hidden">
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+    <h1>Media Vault</h1>
+    <p class="subtitle">Upload Foto & Video (Max 50 MB)</p>
+
+    <input type="file" id="fileInput" accept="image/*,video/*">
+    <button onclick="saveFile()">Upload</button>
+
+    <div id="media" class="media"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
